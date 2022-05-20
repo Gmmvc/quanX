@@ -19,6 +19,9 @@ var obj = JSON.parse(body);
 if (url != -1) {
 	obj.data = [];
 	body = JSON.stringify(obj);
+	console.log(body);
+}else{
+	console.log("失败！")
 }
 
 $done({body});
