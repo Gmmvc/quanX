@@ -17,11 +17,7 @@ var url = $request.url;
 var obj = JSON.parse(body);
 
 if (url != -1) {
-	obj.data = [];
-	body = JSON.stringify(obj);
-	console.log(body);
-}else{
-	console.log("失败！")
+	delete obj.data["imgUrl"];
+	response = { body: JSON.stringify(obj) };
 }
-
 $done({body});
