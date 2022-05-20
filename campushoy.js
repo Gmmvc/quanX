@@ -5,7 +5,7 @@
 QuantumultX:
 
 [rewrite_local]
-^https?\/\/mobile\.campushoy\.com\/v7\/api\/config\/advertise\/showad url script-response-body https://raw.githubusercontent.com/Gmmvc/quanX/main/campushoy.js
+^https?:\/\/mobile\.campushoy\.com\/v7\/api\/config\/advertise\/showad url script-response-body https://raw.githubusercontent.com/Gmmvc/quanX/main/campushoy.js
 
 [mitm]
 hostname = mobile.campushoy.com
