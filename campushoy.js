@@ -16,9 +16,9 @@ var body = $response.body;
 var url = $request.url;
 var obj = JSON.parse(body);
 
-const path = '/v7/api/config/advertise/showad';
+// const path = '/v7/api/config/advertise/showad';
 
-if (url.indexOf(path) != -1) {
+if (url != -1) {
 	obj.data = [];
 	body = JSON.stringify(obj);
 }
