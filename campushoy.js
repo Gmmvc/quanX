@@ -12,12 +12,8 @@ hostname = mobile.campushoy.com
 
 ***************************/
 
-var body = $response.body;
-var url = $request.url;
-var obj = JSON.parse(body);
-
-if (url != -1) {
-	delete obj.data["imgUrl"];
-	response = { body: JSON.stringify(obj) };
-}
-$done({body});
+var obj = JSON.parse($response.body);
+obj.data = "";
+$done({
+    body : JSON.stringify(obj)
+});
